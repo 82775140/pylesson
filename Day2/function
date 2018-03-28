@@ -1,0 +1,43 @@
+def Myfirstfunction():
+    '第一个函数'
+    print("这是我的第一个函数")
+    print("我很激动")
+
+
+print(Myfirstfunction.__doc__)
+
+
+def mysecondfunction(name):
+    print(name+"hello")
+
+
+mysecondfunction("沈少帅")
+
+
+def mythirdfunction(num1, num2):
+    return num1 + num2
+
+
+print(mythirdfunction(1, 7))
+
+
+def saysome(name='sss', words='hello'):
+    print(name+'-->'+words)
+
+
+saysome()
+
+
+def test(*params, num=8):
+    print("参数的长度是", len(params), num)
+    print(params[1])
+
+
+test(1, 2, 3, 4, 5)
+
+
+def back():
+    return "abc", 55, 73.5
+
+
+print(back())
